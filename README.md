@@ -157,7 +157,7 @@ args::Flag variables) with args::get.
 This is unfortunately not possible, given the power of the groups available.
 For instance, if you have a group validation that works like 
 `(A && B) || (C && (D XOR E))`, how is this library going to be able to
-determine what exactly when wrong when it fails?  It only knows that the
+determine what exactly went wrong when it fails?  It only knows that the
 entire expression evaluated false, not specifically what the user did wrong
 (and this is doubled over by the fact that validation operations are ordinary
 functions without any special meaning to the library).  As you are the only one
